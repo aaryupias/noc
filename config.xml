@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.sample.app"
+        version   = "1.0.0">
+
+    <name>NOC Syllabus</name>
+
+    <description>
+        All Syllabus of Nepal Oil Corporation For Open Competition
+    </description>
+
+    <author href="https://www.facebook.com/isRupak" email="rupakbhattarai33@gmail.com">
+        Rupak Bhattarai
+    </author>
+	
+	<!-- Define app icon for each platform. -->
+        <icon src="files/icons/36.png" gap:platform="android" gap:density="ldpi" />
+		<icon src="files/icons/48.png" gap:platform="android" gap:density="mdpi" />
+		<icon src="files/icons/72.png" gap:platform="android" gap:density="hdpi" />
+		<icon src="files/icons/96.png" gap:platform="android" gap:density="xhdpi" />
+		<icon src="files/icons/144.png" gap:platform="android" gap:density="xxhdpi" />
+		<icon src="files/icons/192.png" gap:platform="android" gap:density="xxxhdpi" />
+		
+		
+
+    <!-- For Admob-->
+	
+	<preference name="android-build-tool" value="gradle" /> 
+	<gap:plugin name="cordova-plugin-admobpro" source="npm" />
+	    
+
+    <!-- Customize your app and platform with the preference element. -->
+    <preference name="fullscreen" value="true" />
+	<preference name="android-installLocation" value="auto" />
+	<preference name="android-windowSoftInputMode" value="stateVisible|adjustResize" />
+    
+
+    
+		<content src="index.html" />
+         <access origin="*"/>
+    
+</widget>

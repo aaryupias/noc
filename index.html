@@ -1,0 +1,77 @@
+<html>
+<head> <title>Nepal Oil Corporation Syllabus</title>
+<meta content='width=device-width,initial-scale=1.0,user-scalable=yes' name='viewport'/>
+
+<link href='./css/bootstrap.min.css' rel='stylesheet'/>
+<link href='./css/font-awesome.min.css' rel='stylesheet'/>
+<link href='./css/style.css' rel='stylesheet'/>
+
+<script src='./js/bootstrap.min.js'></script>
+<script src='./js/jquery-1.11.1.min.js'></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</head>
+<body class="body">
+<script>
+var admobid = {};
+if( /(android)/i.test(navigator.userAgent) ) { 
+	admobid = { // for Android
+		banner: 'ca-app-pub-7400299654839742/9964936114',
+		interstitial: 'ca-app-pub-7400299654839742/1703302715',
+		rewardvideo: 'ca-app-pub-7400299654839742/4719637851'
+	};
+} else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {
+	admobid = { // for iOS
+		banner: 'ca-app-pub-7400299654839742/9964936114',
+		interstitial: 'ca-app-pub-7400299654839742/1703302715',
+		rewardvideo: 'ca-app-pub-7400299654839742/4719637851'
+	};
+} else {
+	admobid = { // for Windows Phone
+		banner: 'ca-app-pub-7400299654839742/9964936114',
+		interstitial: 'ca-app-pub-7400299654839742/1703302715',
+		rewardvideo: 'ca-app-pub-7400299654839742/4719637851'
+	};
+}
+
+function initApp() {
+    if (AdMob) {
+        AdMob.createBanner({
+            adId : admobid.banner,
+            position : AdMob.AD_POSITION.BOTTOM_CENTER,
+            autoShow : true
+        });
+    }
+}
+
+document.addEventListener('deviceready', initApp, false);
+</script>
+<div class="sticky">
+<span class="rightbutton" onclick="openNav()">&#9776;</span>
+</div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="more_app.html">Our Other Apps</a>
+  <a href="#">Rate This App</a>
+</div>
+<h3>नेपाल आयल निगमको पाठ्यक्रम</h3><hr />
+<center>
+<a class="button1" href="application_form.html">दरखास्त फाराम</a><br />
+
+<a class="button1" href="./nolevel/nolevel.html">तहविहिन</a>
+<a class="button1" href="./level4/level4.html">तह ४</a> 
+
+
+</body>
+</html>

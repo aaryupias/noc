@@ -1,0 +1,149 @@
+.body
+ {
+background-color: #B8B8B8;
+}
+.button1 {
+    background-color: #00486D;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+	width:250px;
+}
+.button1:hover
+ {
+background-color: #3D979D;
+text-decoration:none;
+}
+
+
+.button2 {
+    background-color: #AEB0B1;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button2:hover
+ {
+background-color: #F26B41;
+text-decoration:none;
+}
+
+.button3 {
+    background-color: #f4511e;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button3:hover
+ {
+background-color: #BB988E;
+text-decoration:none;
+}
+
+.rightbutton{
+    float:right;
+	background-color: #00486D;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.rightbutton:hover
+ {
+background-color: #F26B41;
+text-decoration:none;
+}
+.left {
+	float:left;
+}
+
+.leftbutton{
+    float:left;
+	background-color: #00486D;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.leftbutton:hover
+ {
+background-color: #F26B41;
+text-decoration:none;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 15px;}
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;  
+	top: 0	
+}
