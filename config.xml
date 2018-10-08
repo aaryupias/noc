@@ -24,7 +24,7 @@
 		<icon src="files/icons/144.png" gap:platform="android" gap:density="xxhdpi" />
 		<icon src="files/icons/192.png" gap:platform="android" gap:density="xxxhdpi" />
 		
-		
+	<!-- PDF Viewer -->
 
     <!-- For Admob-->
 	
@@ -45,6 +45,13 @@
 
 		<content src="index.html" />
          
+		 <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+            <uses-permission android:name="android.permission.INTERNET"/>
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+        </config-file>
+		
+		 
 		 <feature name="NetworkStatus">
     <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
 </feature>
