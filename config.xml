@@ -35,11 +35,18 @@
     <!-- Customize your app and platform with the preference element. -->
     <preference name="fullscreen" value="true" />
 	<preference name="android-installLocation" value="auto" />
-	<preference name="android-windowSoftInputMode" value="stateVisible|adjustResize" />
-    
+	
+	<!-- Whilisting to connect internet -->
+	<plugin name="cordova-plugin-whitelist" source="npm"/>
+	 
+<allow-navigation href="*" />
+<allow-intent href="*" />
+<access origin="*" />
 
-    
 		<content src="index.html" />
-         <access origin="*"/>
+         
+		 <feature name="NetworkStatus">
+    <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+</feature>
     
 </widget>
